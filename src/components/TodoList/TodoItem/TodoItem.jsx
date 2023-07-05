@@ -27,7 +27,7 @@ function TodoItem(props) {
       convertedMonth = month;
     }
 
-    return `${year}-${convertedMonth}-${convertedDate}`;
+    return `${year}-${convertedMonth+1}-${convertedDate}`;
   };
 
   const onClickEdit = () => {
