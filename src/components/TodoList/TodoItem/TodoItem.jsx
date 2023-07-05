@@ -27,7 +27,7 @@ function TodoItem(props) {
       convertedMonth = month;
     }
 
-    return `${year}-${convertedMonth+1}-${convertedDate}`;
+    return `${year}-${convertedMonth}-${convertedDate}`;
   };
 
   const onClickEdit = () => {
@@ -90,7 +90,7 @@ function TodoItem(props) {
       </div>
       <div className="tn-container">{task}</div>
       <div className="dd-container">
-        {date}/{month}/{year}
+        {date}/{month+1}/{year}
       </div>
       <div className="ed-container">
         <button onClick={onClickEdit}>Edit</button>
